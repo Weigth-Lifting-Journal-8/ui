@@ -1,0 +1,96 @@
+.features-title {
+    // padding-top: 5vh;
+    height: 10vh;
+    background-color: rgb(255, 106, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+.features-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+
+    @media screen and (max-width: 1200px) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;          
+    }
+    
+
+
+    section {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        img {
+            width: 50%;            
+        } //end of img
+
+        h2 {
+            margin: 2vh 0;
+            font-size: 1.8rem;
+            font-family: 'Russo One', sans-serif;
+        }
+
+        p {
+            font-size: 1.4rem;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            padding: 2vh 5%;            
+        }
+
+
+
+
+    } //end of section
+    
+} //end of features-container
+
+.features-button {
+    // height: 10vh;
+    // background-color: rgb(255, 81, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 5vh  0;
+
+
+    button {
+        width: 15%;
+        height: 8vh;
+        background-color: gold;
+        color: black;
+        font-family: 'Russo one', sans-serif;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 2rem;
+
+
+        &:hover {
+            background-color: yellow;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 80%;
+            font-size: 1.4rem;
+        }
+    }
+
+}

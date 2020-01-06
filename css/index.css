@@ -1,0 +1,376 @@
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  background-image: url(../img/16x9-img3.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  header {
+    background-image: url(../img/9x16-img2.jpg);
+    background-size: 100% 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    background-image: url(../img/9x16-img1.jpg);
+    background-size: 100% 100%;
+  }
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+}
+header nav .nav-logo {
+  width: 3%;
+}
+@media screen and (max-width: 600px) {
+  header nav .nav-logo {
+    width: 8%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav .nav-logo {
+    width: 10%;
+  }
+}
+header nav .nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 750px) {
+  header nav .nav-links {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav .nav-links {
+    width: 90%;
+  }
+}
+header .title-content {
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  header .title-content {
+    height: 100vh;
+  }
+}
+header .title-content h1 {
+  font-size: 4.6rem;
+  font-family: 'Russo One', sans-serif;
+}
+@media screen and (max-width: 500px) {
+  header .title-content h1 {
+    font-size: 2.4rem;
+  }
+}
+header .title-content button {
+  width: 15%;
+  height: 8vh;
+  background-color: gold;
+  color: black;
+  font-family: 'Russo one', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 10vh;
+}
+header .title-content button:hover {
+  background-color: yellow;
+}
+@media screen and (max-width: 1000px) {
+  header .title-content button {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .title-content button {
+    width: 35%;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .title-content button {
+    width: 40%;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .title-content button {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+.features-title {
+  height: 10vh;
+  background-color: #ff6a25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Russo One', sans-serif;
+}
+.features-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5vh;
+}
+@media screen and (max-width: 1200px) {
+  .features-container {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .features-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.features-container section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-container section img {
+  width: 50%;
+}
+.features-container section h2 {
+  margin: 2vh 0;
+  font-size: 1.8rem;
+  font-family: 'Russo One', sans-serif;
+}
+.features-container section p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+@media screen and (max-width: 500px) {
+  .features-container section {
+    width: 100%;
+    padding: 2vh 5%;
+  }
+}
+.features-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 5vh  0;
+}
+.features-button button {
+  width: 15%;
+  height: 8vh;
+  background-color: gold;
+  color: black;
+  font-family: 'Russo one', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2rem;
+}
+.features-button button:hover {
+  background-color: yellow;
+}
+@media screen and (max-width: 500px) {
+  .features-button button {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+footer {
+  height: 10vh;
+  background-color: #e9e9e9;
+}
