@@ -2,7 +2,7 @@
 
 header {
     background-image: url(../img/16x9-img3.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
     
     background-repeat: no-repeat;
@@ -11,26 +11,26 @@ header {
     flex-direction: column;
 
 
-    @media screen and (max-width: 1280px) {
-        background-image: url(../img/16x9-img31.jpg);
-        background-size: 100% 100%;
+    // @media screen and (max-width: 1280px) {
+    //     background-image: url(../img/16x9-img31.jpg);
+    //     background-size: cover;
 
-    }
+    // }
     @media screen and (max-width: 1000px) {
         background-image: url(../img/16x9-img33.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
 
     }
 
     @media screen and (max-width: 768px) {
         background-image: url(../img/16x9-img35.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
 
     }
 
     @media screen and (max-width: 500px) {
         background-image: url(../img/9x16-img12.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
 
     }
 
@@ -46,14 +46,26 @@ header {
 
 
         .nav-logo {
-            width: 3%;
-            @media screen and (max-width: 600px) {
-                width: 8%;
+            top: 0;
+            width: 2%;
+            display: flex;
+            align-items: flex-start;
+            @media screen and (max-width: 1662px) {
+                width: 3%;
+        
+            }
+            @media screen and (max-width: 1400px) {
+                width: 5%;
+        
+            }
+
+            @media screen and (max-width: 760px) {
+                width: 10%;
         
             }
 
             @media screen and (max-width: 500px) {
-                width: 10%;
+                display: none;
                           
             }
         } //end of nav-logo
@@ -67,16 +79,27 @@ header {
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 font-size: 1.5rem;
-            }
 
+                &:hover {
+                    color:@action-button;
+                } //end of :hover
+
+                @media screen and (max-width: 500px) {
+                    font-size: 1.2rem;
+                              
+                }//end of a media query
+            }//end of a
+
+            //media queries for nav-links
             @media screen and (max-width: 750px) {
                 width: 80%;
                           
             }
             @media screen and (max-width: 500px) {
-                width: 90%;
+                width: 100%;
                           
             }
+            //end of nav-links media query
 
         } //end of nav-links
 
@@ -105,8 +128,11 @@ header {
 
 
         h1 {
-            font-size: 4.6rem;
+            font-size: 4rem;
             font-family: 'Russo One', sans-serif;
+            @media screen and (max-width: 1000px) {
+                font-size: 3.2rem;
+            }
 
             @media screen and (max-width: 768px) {
                 font-size:2.8rem ;
@@ -128,6 +154,7 @@ header {
 
         button {
             .action-button();
+            margin-top: 10vh;
         }
 
         

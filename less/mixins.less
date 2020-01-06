@@ -1,5 +1,5 @@
 .action-button() {
-            width: 15%;
+            width: 20%;
             height: 8vh;
             background-color:@action-button;
             color: black;
@@ -7,26 +7,37 @@
             font-size: 1.6rem;
             border: none;
             border-radius: 2rem;
-            margin-top: 10vh;
+            
 
 
             &:hover {
                 background-color: @action-color-hover;
             }
-
-            @media screen and (max-width: 1000px) {
-                width: 18%;
+            @media screen and (max-width: 1400px) {
+                width: 30%;
+                font-size: 1.6rem;
                 
             }
 
-            @media screen and (max-width: 800px) {
-                width: 35%;
-                font-size: 1.4rem;
+            @media screen and (max-width: 1000px) {
+                width: 30%;
+                font-size: 1.6rem;
+                
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 900px) {
                 width: 40%;
+                font-size: 1.6rem;
+                
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 60%;
                 font-size: 1.4rem;
             }
+            // @media screen and (max-width: 600px) {
+            //     width: 40%;
+            //     font-size: 1.4rem;
+            // }
             @media screen and (max-width: 500px) {
                 width: 80%;
                 font-size: 1.4rem;

@@ -174,35 +174,29 @@ table {
 }
 header {
   background-image: url(../img/16x9-img3.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 1280px) {
-  header {
-    background-image: url(../img/16x9-img31.jpg);
-    background-size: 100% 100%;
-  }
-}
 @media screen and (max-width: 1000px) {
   header {
     background-image: url(../img/16x9-img33.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 768px) {
   header {
     background-image: url(../img/16x9-img35.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 500px) {
   header {
     background-image: url(../img/9x16-img12.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
   }
 }
 header nav {
@@ -214,16 +208,29 @@ header nav {
   height: 7vh;
 }
 header nav .nav-logo {
-  width: 3%;
+  top: 0;
+  width: 2%;
+  display: flex;
+  align-items: flex-start;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1662px) {
   header nav .nav-logo {
-    width: 8%;
+    width: 3%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header nav .nav-logo {
+    width: 5%;
+  }
+}
+@media screen and (max-width: 760px) {
+  header nav .nav-logo {
+    width: 10%;
   }
 }
 @media screen and (max-width: 500px) {
   header nav .nav-logo {
-    width: 10%;
+    display: none;
   }
 }
 header nav .nav-links {
@@ -236,6 +243,14 @@ header nav .nav-links a {
   color: #ffffff;
   font-size: 1.5rem;
 }
+header nav .nav-links a:hover {
+  color: gold;
+}
+@media screen and (max-width: 500px) {
+  header nav .nav-links a {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 750px) {
   header nav .nav-links {
     width: 80%;
@@ -243,7 +258,7 @@ header nav .nav-links a {
 }
 @media screen and (max-width: 500px) {
   header nav .nav-links {
-    width: 90%;
+    width: 100%;
   }
 }
 header .title-content {
@@ -260,8 +275,13 @@ header .title-content {
   }
 }
 header .title-content h1 {
-  font-size: 4.6rem;
+  font-size: 4rem;
   font-family: 'Russo One', sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  header .title-content h1 {
+    font-size: 3.2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header .title-content h1 {
@@ -281,7 +301,7 @@ header .title-content h1 {
   }
 }
 header .title-content button {
-  width: 15%;
+  width: 20%;
   height: 8vh;
   background-color: gold;
   color: black;
@@ -294,20 +314,27 @@ header .title-content button {
 header .title-content button:hover {
   background-color: #ffe766;
 }
+@media screen and (max-width: 1400px) {
+  header .title-content button {
+    width: 30%;
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   header .title-content button {
-    width: 18%;
+    width: 30%;
+    font-size: 1.6rem;
   }
 }
-@media screen and (max-width: 800px) {
-  header .title-content button {
-    width: 35%;
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   header .title-content button {
     width: 40%;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .title-content button {
+    width: 60%;
     font-size: 1.4rem;
   }
 }
@@ -326,12 +353,18 @@ header .title-content button:hover {
   font-size: 2rem;
   font-family: 'Russo One', sans-serif;
 }
+@media screen and (max-width: 500px) {
+  .features-title {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
 .features-container {
   max-width: 1300px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 5vh;
+  padding: 5vh 5% 0 5%;
 }
 @media screen and (max-width: 1200px) {
   .features-container {
@@ -349,6 +382,7 @@ header .title-content button:hover {
   .features-container {
     display: flex;
     flex-direction: column;
+    padding: 5v 2%;
   }
 }
 .features-container section {
@@ -390,11 +424,11 @@ header .title-content button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5vh;
   font-size: 2rem;
-  margin: 5vh  0;
 }
 .features-button button {
-  width: 15%;
+  width: 20%;
   height: 8vh;
   background-color: gold;
   color: black;
@@ -402,25 +436,31 @@ header .title-content button:hover {
   font-size: 1.6rem;
   border: none;
   border-radius: 2rem;
-  margin-top: 10vh;
 }
 .features-button button:hover {
   background-color: #ffe766;
 }
+@media screen and (max-width: 1400px) {
+  .features-button button {
+    width: 30%;
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .features-button button {
-    width: 18%;
+    width: 30%;
+    font-size: 1.6rem;
   }
 }
-@media screen and (max-width: 800px) {
-  .features-button button {
-    width: 35%;
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .features-button button {
     width: 40%;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features-button button {
+    width: 60%;
     font-size: 1.4rem;
   }
 }
