@@ -263,9 +263,21 @@ header .title-content h1 {
   font-size: 4.6rem;
   font-family: 'Russo One', sans-serif;
 }
+@media screen and (max-width: 768px) {
+  header .title-content h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 500px) {
   header .title-content h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .title-content p {
+    display: none;
   }
 }
 header .title-content button {
@@ -347,6 +359,11 @@ header .title-content button:hover {
 }
 .features-container section img {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .features-container section img {
+    width: 40%;
+  }
 }
 .features-container section h2 {
   margin: 2vh 0;
