@@ -174,22 +174,34 @@ table {
 }
 header {
   background-image: url(../img/16x9-img3.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1280px) {
   header {
-    background-image: url(../img/9x16-img2.jpg);
+    background-image: url(../img/16x9-img31.jpg);
+    background-size: 100% 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    background-image: url(../img/16x9-img33.jpg);
+    background-size: 100% 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url(../img/16x9-img35.jpg);
     background-size: 100% 100%;
   }
 }
 @media screen and (max-width: 500px) {
   header {
-    background-image: url(../img/9x16-img1.jpg);
+    background-image: url(../img/9x16-img12.jpg);
     background-size: 100% 100%;
   }
 }
@@ -221,7 +233,7 @@ header nav .nav-links {
 }
 header nav .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 750px) {
@@ -259,7 +271,7 @@ header .title-content h1 {
 header .title-content button {
   width: 15%;
   height: 8vh;
-  background-color: gold;
+  background-color: #ffd900;
   color: black;
   font-family: 'Russo one', sans-serif;
   font-size: 1.6rem;
