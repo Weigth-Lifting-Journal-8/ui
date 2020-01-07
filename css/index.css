@@ -301,8 +301,9 @@ header .title-content h1 {
   }
 }
 header .title-content button {
+  min-width: 400px;
   width: 20%;
-  height: 8vh;
+  height: 10vh;
   background-color: gold;
   color: black;
   font-family: 'Russo one', sans-serif;
@@ -314,32 +315,9 @@ header .title-content button {
 header .title-content button:hover {
   background-color: #ffe766;
 }
-@media screen and (max-width: 1400px) {
-  header .title-content button {
-    width: 30%;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  header .title-content button {
-    width: 30%;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  header .title-content button {
-    width: 40%;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  header .title-content button {
-    width: 60%;
-    font-size: 1.4rem;
-  }
-}
 @media screen and (max-width: 500px) {
   header .title-content button {
+    min-width: 100px;
     width: 80%;
     font-size: 1.4rem;
   }
@@ -428,8 +406,9 @@ header .title-content button:hover {
   font-size: 2rem;
 }
 .features-button button {
+  min-width: 400px;
   width: 20%;
-  height: 8vh;
+  height: 10vh;
   background-color: gold;
   color: black;
   font-family: 'Russo one', sans-serif;
@@ -440,32 +419,9 @@ header .title-content button:hover {
 .features-button button:hover {
   background-color: #ffe766;
 }
-@media screen and (max-width: 1400px) {
-  .features-button button {
-    width: 30%;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .features-button button {
-    width: 30%;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  .features-button button {
-    width: 40%;
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .features-button button {
-    width: 60%;
-    font-size: 1.4rem;
-  }
-}
 @media screen and (max-width: 500px) {
   .features-button button {
+    min-width: 100px;
     width: 80%;
     font-size: 1.4rem;
   }
