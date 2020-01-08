@@ -172,34 +172,35 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.home-header {
-  background-image: url(../img/16x9-img3.jpg);
+.contact-header {
+  background-image: url(../img/16x9-img11.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (max-width: 1000px) {
-  .home-header {
+  .contact-header {
     background-image: url(../img/16x9-img33.jpg);
     background-size: cover;
   }
 }
 @media screen and (max-width: 768px) {
-  .home-header {
+  .contact-header {
     background-image: url(../img/16x9-img35.jpg);
     background-size: cover;
   }
 }
 @media screen and (max-width: 500px) {
-  .home-header {
+  .contact-header {
     background-image: url(../img/9x16-img12.jpg);
     background-size: cover;
   }
 }
-.home-header nav {
+.contact-header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -207,120 +208,67 @@ table {
   width: 100%;
   height: 7vh;
 }
-.home-header nav .nav-logo {
+.contact-header nav .nav-logo {
   top: 0;
   width: 2%;
   display: flex;
   align-items: flex-start;
 }
 @media screen and (max-width: 1662px) {
-  .home-header nav .nav-logo {
+  .contact-header nav .nav-logo {
     width: 3%;
   }
 }
 @media screen and (max-width: 1400px) {
-  .home-header nav .nav-logo {
+  .contact-header nav .nav-logo {
     width: 5%;
   }
 }
 @media screen and (max-width: 760px) {
-  .home-header nav .nav-logo {
+  .contact-header nav .nav-logo {
     width: 10%;
   }
 }
 @media screen and (max-width: 500px) {
-  .home-header nav .nav-logo {
+  .contact-header nav .nav-logo {
     display: none;
   }
 }
-.home-header nav .nav-links {
+.contact-header nav .nav-links {
   width: 50%;
   display: flex;
   justify-content: space-around;
 }
-.home-header nav .nav-links a {
+.contact-header nav .nav-links a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
 }
-.home-header nav .nav-links a:hover {
+.contact-header nav .nav-links a:hover {
   color: gold;
 }
 @media screen and (max-width: 500px) {
-  .home-header nav .nav-links a {
+  .contact-header nav .nav-links a {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 750px) {
-  .home-header nav .nav-links {
+  .contact-header nav .nav-links {
     width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
-  .home-header nav .nav-links {
+  .contact-header nav .nav-links {
     width: 100%;
   }
 }
-.home-header .title-content {
-  color: white;
-  height: 90vh;
+.contact-header .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 500px) {
-  .home-header .title-content {
-    height: 100vh;
-  }
-}
-.home-header .title-content h1 {
-  font-size: 4rem;
-  font-family: 'Russo One', sans-serif;
-}
-@media screen and (max-width: 1000px) {
-  .home-header .title-content h1 {
-    font-size: 3.2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .home-header .title-content h1 {
-    font-size: 2.8rem;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  .home-header .title-content h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  .home-header .title-content p {
-    display: none;
-  }
-}
-.home-header .title-content button {
-  min-width: 400px;
-  width: 20%;
-  height: 10vh;
-  background-color: gold;
-  color: black;
-  font-family: 'Russo one', sans-serif;
-  font-size: 1.6rem;
-  border: none;
-  border-radius: 2rem;
-  margin-top: 10vh;
-}
-.home-header .title-content button:hover {
-  background-color: #ffe766;
-}
-@media screen and (max-width: 500px) {
-  .home-header .title-content button {
-    min-width: 100px;
-    width: 80%;
-    font-size: 1.4rem;
-  }
+  background-color: orange;
+  height: 50vh;
+  max-width: 500px;
+  border-radius: 1rem;
 }
 .features-title {
   height: 10vh;

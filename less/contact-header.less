@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 
-header {
-    background-image: url(../img/16x9-img3.jpg);
+.contact-header {
+
+    
+    background-image: url(../img/16x9-img11.jpg);
     background-size: cover;
     background-attachment: fixed;
     
@@ -9,6 +11,7 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 
     // @media screen and (max-width: 1280px) {
@@ -109,60 +112,17 @@ header {
 
     } //end of nav
 
-    .title-content {
-        color: white;
-        height: 90vh;
+    .contact-container {
         display: flex;
-
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // border: 1px solid red;
 
-        @media screen and (max-width: 500px) {
-            height: 100vh;
-        }
+        background-color: orange;
+        height: 50vh;
+        max-width: 500px;
+        border-radius: 1rem;
 
-        
+    }//end contact-container
 
 
-
-        h1 {
-            font-size: 4rem;
-            font-family: 'Russo One', sans-serif;
-            @media screen and (max-width: 1000px) {
-                font-size: 3.2rem;
-            }
-
-            @media screen and (max-width: 768px) {
-                font-size:2.8rem ;
-                text-align: center;
-            }
-
-            @media screen and (max-width: 500px) {
-                font-size: 2rem;
-                text-align: center;
-            }
-        } //end of h1
-
-        p{
-            @media screen and (max-width: 500px) {
-                display: none;
-            }
-        }
-
-
-        button {
-            .action-button();
-            margin-top: 10vh;
-        }
-
-        
-
-
-
-    } //end of title-content
-
-
-
+    
 } //end of header
