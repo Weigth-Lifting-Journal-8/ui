@@ -119,15 +119,21 @@
 
         background-color: @section-bg;
         height: 80vh;        
-        width: 40%;
+        width: 30%;
         border-radius: 1rem;
         padding: 2%;
         overflow: auto;
+        align-items: center;
+
+        button {
+            .general-button();
+        }
         
 
         form {
             display: flex;
             flex-direction: column;
+            width: 90%;
 
             label {
                 font-size: 1.8rem;
@@ -157,9 +163,12 @@
                 overflow: auto;
             }
 
-            #submit-button {
-                color: red; 
+            button {
+                margin: auto;
             }
+
+
+            
         }
 
         @media screen and (max-width: 768px) {

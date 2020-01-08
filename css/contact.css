@@ -256,14 +256,38 @@ table {
   flex-direction: column;
   background-color: #ff6a25;
   height: 80vh;
-  width: 40%;
+  width: 30%;
   border-radius: 1rem;
   padding: 2%;
   overflow: auto;
+  align-items: center;
+}
+.contact-header .contact-container button {
+  min-width: 400px;
+  width: 20%;
+  height: 5vh;
+  background-color: gold;
+  color: black;
+  font-family: 'Russo one', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2rem;
+}
+.contact-header .contact-container button:hover {
+  background-color: #ffe766;
+}
+@media screen and (max-width: 500px) {
+  .contact-header .contact-container button {
+    margin-top: 2vh;
+    min-width: 100px;
+    width: 100%;
+    font-size: 1.4rem;
+  }
 }
 .contact-header .contact-container form {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 .contact-header .contact-container form label {
   font-size: 1.8rem;
@@ -289,8 +313,8 @@ table {
 .contact-header .contact-container form textarea {
   overflow: auto;
 }
-.contact-header .contact-container form #submit-button {
-  color: red;
+.contact-header .contact-container form button {
+  margin: auto;
 }
 @media screen and (max-width: 768px) {
   .contact-header .contact-container {

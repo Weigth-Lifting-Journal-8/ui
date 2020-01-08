@@ -45,3 +45,28 @@
                 font-size: 1.4rem;
             }
 }
+
+.general-button() {
+    min-width: 400px;
+    width: 20%;
+    height: 5vh;
+    background-color:@action-button;
+    color: black;
+    font-family: 'Russo one', sans-serif;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 2rem;
+    
+
+
+    &:hover {
+        background-color: @action-color-hover;
+    }
+    
+    @media screen and (max-width: 500px) {
+        margin-top: 2vh;
+        min-width: 100px;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
