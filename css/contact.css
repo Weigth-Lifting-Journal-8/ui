@@ -182,18 +182,6 @@ table {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 1000px) {
-  .contact-header {
-    background-image: url(../img/16x9-img33.jpg);
-    background-size: cover;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contact-header {
-    background-image: url(../img/16x9-img35.jpg);
-    background-size: cover;
-  }
-}
 @media screen and (max-width: 500px) {
   .contact-header {
     background-image: url(../img/9x16-img12.jpg);
@@ -252,7 +240,7 @@ table {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .contact-header nav .nav-links {
     width: 80%;
   }
@@ -263,12 +251,76 @@ table {
   }
 }
 .contact-header .contact-container {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
-  background-color: orange;
-  height: 50vh;
-  max-width: 500px;
+  background-color: #ff6a25;
+  height: 80vh;
+  width: 40%;
   border-radius: 1rem;
+  padding: 2%;
+  overflow: auto;
+}
+.contact-header .contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-header .contact-container form label {
+  font-size: 1.8rem;
+  padding-top: 2vh;
+  font-family: 'Russo One', sans-serif;
+}
+@media screen and (max-width: 500px) {
+  .contact-header .contact-container form label {
+    font-size: 1.2rem;
+    padding-top: 1vh;
+  }
+}
+.contact-header .contact-container form input {
+  height: 3.4rem;
+  border: 1px solid gold;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .contact-header .contact-container form input {
+    height: 2.4rem;
+  }
+}
+.contact-header .contact-container form textarea {
+  overflow: auto;
+}
+.contact-header .contact-container form #submit-button {
+  min-width: 400px;
+  width: 20%;
+  height: 10vh;
+  background-color: gold;
+  color: black;
+  font-family: 'Russo one', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2rem;
+}
+.contact-header .contact-container form #submit-button:hover {
+  background-color: #ffe766;
+}
+@media screen and (max-width: 500px) {
+  .contact-header .contact-container form #submit-button {
+    min-width: 100px;
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-header .contact-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-header .contact-container {
+    margin-top: 5vh;
+    margin: 0 2%;
+    width: 95%;
+  }
 }
 .features-title {
   height: 10vh;
