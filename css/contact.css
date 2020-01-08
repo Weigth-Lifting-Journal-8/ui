@@ -290,25 +290,7 @@ table {
   overflow: auto;
 }
 .contact-header .contact-container form #submit-button {
-  min-width: 400px;
-  width: 20%;
-  height: 10vh;
-  background-color: gold;
-  color: black;
-  font-family: 'Russo one', sans-serif;
-  font-size: 1.6rem;
-  border: none;
-  border-radius: 2rem;
-}
-.contact-header .contact-container form #submit-button:hover {
-  background-color: #ffe766;
-}
-@media screen and (max-width: 500px) {
-  .contact-header .contact-container form #submit-button {
-    min-width: 100px;
-    width: 80%;
-    font-size: 1.4rem;
-  }
+  color: red;
 }
 @media screen and (max-width: 768px) {
   .contact-header .contact-container {
