@@ -254,7 +254,7 @@ table {
   margin-top: 2vh;
   display: flex;
   flex-direction: column;
-  background-color: #ff6a25;
+  background-color: white;
   height: 85vh;
   width: 30%;
   border-radius: 1rem;
@@ -294,6 +294,7 @@ table {
   font-size: 1.8rem;
   padding-top: 2vh;
   font-family: 'Russo One', sans-serif;
+  color: #ff6a25;
 }
 @media screen and (max-width: 500px) {
   .contact-header .contact-container form label {
@@ -303,7 +304,7 @@ table {
 }
 .contact-header .contact-container form input {
   height: 2.6rem;
-  border: 1px solid gold;
+  border: 2px solid #ff6a25;
   border-radius: 1rem;
   padding-left: 10px;
 }
@@ -317,6 +318,7 @@ table {
   border-radius: 1rem;
   padding: 10px;
   padding-bottom: 30px;
+  border: 2px solid #ff6a25;
 }
 .contact-header .contact-container form button {
   margin: auto;

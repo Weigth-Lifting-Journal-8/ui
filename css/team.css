@@ -269,15 +269,21 @@ table {
   padding-top: 20px;
 }
 .team-header .team-container section h2 {
+  margin-top: 10px;
   font-family: 'Russo One', sans-serif;
   font-size: 1.8rem;
   color: #ff6a25;
+}
+.team-header .team-container section h3 {
+  font-family: 'Russo One', sans-serif;
+  color: gray;
 }
 .team-header .team-container section p {
   margin: 10px;
   text-align: justify;
 }
 .team-header .team-container section button {
+  margin-top: 50px;
   min-width: 200px;
   max-width: 100%;
   width: 20%;
