@@ -1,50 +1,29 @@
+
+//call to action button
 .action-button() {
-            min-width: 400px;
-            width: 20%;
-            height: 10vh;
-            background-color:@action-button;
-            color: black;
-            font-family: 'Russo one', sans-serif;
-            font-size: 1.6rem;
-            border: none;
-            border-radius: 2rem;
-            
+    min-width: 400px;
+    width: 20%;
+    height: 10vh;
+    background-color: @action-button;
+    color: black;
+    font-family: @main-font;
+    border: none;
+    border-radius: 2rem;           
 
 
-            &:hover {
-                background-color: @action-color-hover;
-            }
-            // @media screen and (max-width: 1400px) {
-            //     width: 30%;
-            //     font-size: 1.6rem;
-                
-            // }
+    &:hover {
+        background-color: @action-color-hover;
+    }
+    
+    @media @phone500 {
+        min-width: 100px;
+        width: 80%;
+        font-size: 1.4rem;
+    }
 
-            // @media screen and (max-width: 1000px) {
-            //     width: 30%;
-            //     font-size: 1.6rem;
-                
-            // }
-            // @media screen and (max-width: 900px) {
-            //     width: 40%;
-            //     font-size: 1.6rem;
-                
-            // }
+} //end of action button
 
-            // @media screen and (max-width: 768px) {
-            //     width: 60%;
-            //     font-size: 1.4rem;
-            // }
-            // // @media screen and (max-width: 600px) {
-            // //     width: 40%;
-            // //     font-size: 1.4rem;
-            // // }
-            @media screen and (max-width: 500px) {
-                min-width: 100px;
-                width: 80%;
-                font-size: 1.4rem;
-            }
-}
+
 
 .general-button() {
     min-width: 200px;
@@ -53,24 +32,24 @@
     height: 5vh;
     background-color:@action-button;
     color: black;
-    font-family: 'Russo one', sans-serif;
+    font-family: @main-font;
     font-size: 1.6rem;
     border: none;
-    border-radius: 2rem;
-    
+    border-radius: 2rem;    
 
 
     &:hover {
         background-color: @action-color-hover;
     }
     
-    @media screen and (max-width: 500px) {
+    @media @phone500 {
         margin-top: 2vh;
         min-width: 100px;
         width: 100%;
         font-size: 1.4rem;
     }
-}
+
+} //end of general button()
 
 
 ///template for biography card bio-card
@@ -84,9 +63,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    padding:20px;
-
-    
+    padding:20px;    
 
 
     img{
@@ -98,13 +75,13 @@
 
     h2 {
         margin-top: 10px;
-        font-family: 'Russo One', sans-serif;
+        font-family: @main-font;
         font-size: 1.8rem;
         color: @section-bg;
         
     }
     h3 {
-        font-family: 'Russo One', sans-serif;
+        font-family: @main-font;
         color: gray;
 
     }

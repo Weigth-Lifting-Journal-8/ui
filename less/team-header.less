@@ -3,9 +3,7 @@
     
     background-image: url(../img/16x9-img21.jpg);
     background-size: cover;
-    background-attachment: fixed;
-
-    
+    background-attachment: fixed;    
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
@@ -27,16 +25,18 @@
             width: 2%;
             display: flex;
             align-items: flex-start;
-            @media screen and (max-width: 1662px) {
+
+
+            @media @desktop1600 {
                 width: 3%;
         
             }
-            @media screen and (max-width: 1400px) {
+            @media @laptop1400 {
                 width: 5%;
         
             }
 
-            @media screen and (max-width: 760px) {
+            @media @laptop768 {
                 width: 10%;
         
             }
@@ -45,7 +45,7 @@
                 display: none;
                           
             }
-            
+
         } //end of nav-logo
 
         .nav-links {
@@ -62,24 +62,26 @@
                     color:@action-button;
                 } //end of :hover
 
-                @media screen and (max-width: 500px) {
+                @media @phone500 {
                     font-size: 1.2rem;
                               
                 }//end of a media query
+
             }//end of a
 
             //media queries for nav-links
-            @media screen and (max-width: 768px) {
+            @media @laptop768 {
                 width: 80%;
                           
             }
-            @media screen and (max-width: 500px) {
+            @media @phone500 {
                 width: 100%;
                           
             }
             //end of nav-links media query
 
-        } //end of nav-links  
+        } //end of nav-links 
+
      } //end of nav
 
 
@@ -91,26 +93,21 @@
         justify-content: space-around;
         align-items: center;
 
+        //parametric mixin
         section {
             .bio-card();
             
         }
 
-        @media screen and (max-width: 500px) {
+        @media @phone500 {
             display: flex;
             flex-wrap: nowrap;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-
-            
+            justify-content: space-between;           
                       
         }
 
-
-
-
-    }
-        
+    }        
 
 }//end of team-header

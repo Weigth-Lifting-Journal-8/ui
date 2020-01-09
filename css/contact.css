@@ -182,7 +182,7 @@ table {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header {
     background-image: url(../img/9x16-img12.jpg);
     background-size: cover;
@@ -202,22 +202,22 @@ table {
   display: flex;
   align-items: flex-start;
 }
-@media screen and (max-width: 1662px) {
+@media (max-width: 1600px) {
   .contact-header nav .nav-logo {
     width: 3%;
   }
 }
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .contact-header nav .nav-logo {
     width: 5%;
   }
 }
-@media screen and (max-width: 760px) {
+@media (max-width: 768px) {
   .contact-header nav .nav-logo {
     width: 10%;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header nav .nav-logo {
     display: none;
   }
@@ -235,17 +235,17 @@ table {
 .contact-header nav .nav-links a:hover {
   color: gold;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header nav .nav-links a {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contact-header nav .nav-links {
     width: 80%;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header nav .nav-links {
     width: 100%;
   }
@@ -269,7 +269,7 @@ table {
   height: 5vh;
   background-color: gold;
   color: black;
-  font-family: 'Russo one', sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-size: 1.6rem;
   border: none;
   border-radius: 2rem;
@@ -277,7 +277,7 @@ table {
 .contact-header .contact-container button:hover {
   background-color: #ffe766;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header .contact-container button {
     margin-top: 2vh;
     min-width: 100px;
@@ -296,7 +296,7 @@ table {
   font-family: 'Russo One', sans-serif;
   color: #ff6a25;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header .contact-container form label {
     font-size: 1.2rem;
     padding-top: 1vh;
@@ -308,7 +308,7 @@ table {
   border-radius: 1rem;
   padding-left: 10px;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header .contact-container form input {
     height: 2.4rem;
   }
@@ -325,12 +325,12 @@ table {
   margin-top: 1vh;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contact-header .contact-container {
     width: 70%;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact-header .contact-container {
     margin-top: 5vh;
     margin: 0 2%;
@@ -442,15 +442,14 @@ table {
   height: 10vh;
   background-color: gold;
   color: black;
-  font-family: 'Russo one', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
   border: none;
   border-radius: 2rem;
 }
 .features-button button:hover {
   background-color: #ffe766;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .features-button button {
     min-width: 100px;
     width: 80%;
