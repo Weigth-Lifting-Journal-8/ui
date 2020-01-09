@@ -92,10 +92,12 @@
         min-height: 100vh;
         justify-content: space-around;
         align-items: center;
+        max-width: 1600px;
 
-        //parametric mixin
+        
         section {
-            .bio-card();
+            //parametric mixin prop is Width
+            .bio-card(400px);
             
         }
 
@@ -108,6 +110,6 @@
                       
         }
 
-    }        
+    }   //end of team-container     
 
 }//end of team-header

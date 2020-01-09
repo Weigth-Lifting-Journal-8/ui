@@ -251,16 +251,17 @@ table {
   min-height: 100vh;
   justify-content: space-around;
   align-items: center;
+  max-width: 1600px;
 }
 .team-header .team-container section {
-  max-width: 450px;
+  max-width: 400px;
   height: 550px;
   background-color: white;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 10px 0 10px;
   padding: 20px;
 }
 .team-header .team-container section img {
@@ -405,6 +406,7 @@ table {
   background-color: gold;
   color: black;
   font-family: 'Russo One', sans-serif;
+  font-size: 1.8rem;
   border: none;
   border-radius: 2rem;
 }
