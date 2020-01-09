@@ -211,7 +211,7 @@ table {
     width: 10%;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .team-header nav .nav-logo {
     display: none;
   }
