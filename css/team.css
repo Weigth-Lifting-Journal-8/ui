@@ -172,23 +172,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.contact-header {
-  background-image: url(../img/16x9-img11.jpg);
+.team-header {
+  background-image: url(../img/16x9-img21.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (max-width: 500px) {
-  .contact-header {
-    background-image: url(../img/9x16-img12.jpg);
+  .team-header {
+    background-image: url(../img/9x16-img21.jpg);
     background-size: cover;
   }
 }
-.contact-header nav {
+.team-header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -196,73 +196,94 @@ table {
   width: 100%;
   height: 7vh;
 }
-.contact-header nav .nav-logo {
+.team-header nav .nav-logo {
   top: 0;
   width: 2%;
   display: flex;
   align-items: flex-start;
 }
 @media screen and (max-width: 1662px) {
-  .contact-header nav .nav-logo {
+  .team-header nav .nav-logo {
     width: 3%;
   }
 }
 @media screen and (max-width: 1400px) {
-  .contact-header nav .nav-logo {
+  .team-header nav .nav-logo {
     width: 5%;
   }
 }
 @media screen and (max-width: 760px) {
-  .contact-header nav .nav-logo {
+  .team-header nav .nav-logo {
     width: 10%;
   }
 }
 @media screen and (max-width: 500px) {
-  .contact-header nav .nav-logo {
+  .team-header nav .nav-logo {
     display: none;
   }
 }
-.contact-header nav .nav-links {
+.team-header nav .nav-links {
   width: 50%;
   display: flex;
   justify-content: space-around;
 }
-.contact-header nav .nav-links a {
+.team-header nav .nav-links a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
 }
-.contact-header nav .nav-links a:hover {
+.team-header nav .nav-links a:hover {
   color: gold;
 }
 @media screen and (max-width: 500px) {
-  .contact-header nav .nav-links a {
+  .team-header nav .nav-links a {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .contact-header nav .nav-links {
+  .team-header nav .nav-links {
     width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
-  .contact-header nav .nav-links {
+  .team-header nav .nav-links {
     width: 100%;
   }
 }
-.contact-header .contact-container {
-  margin-top: 2vh;
+.team-header .team-container {
   display: flex;
-  flex-direction: column;
-  background-color: #ff6a25;
-  height: 85vh;
-  width: 30%;
-  border-radius: 1rem;
-  padding: 2%;
-  overflow: auto;
+  flex-wrap: wrap;
+  width: 80%;
+  min-height: 100vh;
+  justify-content: space-around;
   align-items: center;
 }
-.contact-header .contact-container button {
+.team-header .team-container section {
+  max-width: 450px;
+  height: 550px;
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+.team-header .team-container section img {
+  width: 40%;
+  border-radius: 50%;
+  padding-top: 20px;
+}
+.team-header .team-container section h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.8rem;
+  color: #ff6a25;
+}
+.team-header .team-container section p {
+  margin: 10px;
+  text-align: justify;
+}
+.team-header .team-container section button {
   min-width: 200px;
   max-width: 100%;
   width: 20%;
@@ -274,82 +295,25 @@ table {
   border: none;
   border-radius: 2rem;
 }
-.contact-header .contact-container button:hover {
+.team-header .team-container section button:hover {
   background-color: #ffe766;
 }
 @media screen and (max-width: 500px) {
-  .contact-header .contact-container button {
+  .team-header .team-container section button {
     margin-top: 2vh;
     min-width: 100px;
     width: 100%;
     font-size: 1.4rem;
   }
 }
-.contact-header .contact-container form {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.contact-header .contact-container form label {
-  font-size: 1.8rem;
-  padding-top: 2vh;
-  font-family: 'Russo One', sans-serif;
-}
 @media screen and (max-width: 500px) {
-  .contact-header .contact-container form label {
-    font-size: 1.2rem;
-    padding-top: 1vh;
+  .team-header .team-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-}
-.contact-header .contact-container form input {
-  height: 2.6rem;
-  border: 1px solid gold;
-  border-radius: 1rem;
-  padding-left: 10px;
-}
-@media screen and (max-width: 500px) {
-  .contact-header .contact-container form input {
-    height: 2.4rem;
-  }
-}
-.contact-header .contact-container form textarea {
-  overflow: auto;
-  border-radius: 1rem;
-  padding: 10px;
-  padding-bottom: 30px;
-}
-.contact-header .contact-container form button {
-  margin: auto;
-  margin-top: 1vh;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .contact-header .contact-container {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .contact-header .contact-container {
-    margin-top: 5vh;
-    margin: 0 2%;
-    width: 95%;
-  }
-}
-.contact-header .contact-container .or-login {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-}
-.contact-header .contact-container .or-login h3 {
-  text-align: center;
-  padding-bottom: 5px;
-}
-.contact-header .contact-container .or-login button {
-  width: 100%;
 }
 .features-title {
   height: 10vh;

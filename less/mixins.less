@@ -47,7 +47,8 @@
 }
 
 .general-button() {
-    min-width: 400px;
+    min-width: 200px;
+    max-width: 100%;
     width: 20%;
     height: 5vh;
     background-color:@action-button;
@@ -69,4 +70,48 @@
         width: 100%;
         font-size: 1.4rem;
     }
+}
+
+
+///template for biography card bio-card
+
+.bio-card(){
+    max-width: 450px;
+    height: 550px;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding:20px;
+
+    
+
+
+    img{
+        width: 40%;
+        border-radius: 50%;
+        padding-top: 20px;
+        
+    }
+
+    h2 {
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.8rem;
+        color: @section-bg;
+        
+    }
+    p {
+        margin: 10px;
+        text-align: justify;
+    }
+
+    button {
+        .general-button();
+    }
+
+    
+
+    
 }

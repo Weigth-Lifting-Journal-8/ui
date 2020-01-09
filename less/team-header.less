@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
-
-.contact-header {
+.team-header {
 
     
-    background-image: url(../img/16x9-img11.jpg);
+    background-image: url(../img/16x9-img21.jpg);
     background-size: cover;
     background-attachment: fixed;
+
     
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +31,7 @@
     // }
 
     @media screen and (max-width: 500px) {
-        background-image: url(../img/9x16-img12.jpg);
+        background-image: url(../img/9x16-img21.jpg);
         background-size: cover;
 
     }
@@ -104,113 +103,36 @@
             }
             //end of nav-links media query
 
-        } //end of nav-links
+        } //end of nav-links  
+     } //end of nav
 
 
-
-
-
-    } //end of nav
-
-    .contact-container {
-        margin-top: 2vh;
+    .team-container {
         display: flex;
-        flex-direction: column;
-
-        background-color: @section-bg;
-        height: 85vh;        
-        width: 30%;
-        border-radius: 1rem;
-        padding: 2%;
-        overflow: auto;
+        flex-wrap: wrap;
+        width: 80%;
+        min-height: 100vh;
+        justify-content: space-around;
         align-items: center;
 
-        button {
-            .general-button();
-        }
-        
-
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-
-            label {
-                font-size: 1.8rem;
-                padding-top: 2vh;
-                font-family: 'Russo One', sans-serif;
-
-
-                @media screen and (max-width: 500px) {
-                    font-size: 1.2rem;
-                    padding-top: 1vh;
-                }
-            }
-
-            input {
-                height: 2.6rem;
-                border: 1px solid gold;
-                border-radius: 1rem;
-                // margin: 2vh 0;
-                padding-left: 10px;
-
-                @media screen and (max-width: 500px) {
-                    height: 2.4rem;
-                }
-            }
-
-
-            textarea {
-                overflow: auto;
-                border-radius: 1rem;
-                padding: 10px;
-                padding-bottom: 30px;
-            }
-
-            button {
-                margin: auto;
-                margin-top: 1vh;
-                width: 100%;
-        
-            }
-
-
+        section {
+            .bio-card();
             
-        }
-
-        @media screen and (max-width: 768px) {
-            width: 70%;
-                      
         }
 
         @media screen and (max-width: 500px) {
-            margin-top: 5vh;
-            margin: 0 2%;
-            width:95%;
-            
-    
-        }
-
-        .or-login {
-            margin-top: 20px;
-            width: 100%;
             display: flex;
+            flex-wrap: nowrap;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            padding: 2%;
-
-            h3 {
-                text-align: center;
-                padding-bottom: 5px;
-            }
-            button {
-                width: 100%;
-            }
-
+            justify-content: space-between;
+                      
         }
-    }//end contact-container
 
 
-    
-} //end of header
+
+
+    }
+        
+
+}//end of team-header
