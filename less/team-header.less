@@ -1,4 +1,5 @@
 .team-header {
+    .flex(column;none;center);
 
     
     background-image: url(../img/16x9-img21.jpg);
@@ -6,9 +7,9 @@
     background-attachment: fixed;    
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 
 
     nav {
@@ -90,8 +91,8 @@
         .flex(row; space-around; center);        
         flex-wrap: wrap;
         width: 80%;
-        min-height: 100vh;        
-        max-width: 1400px;
+        min-height: 100vh;     
+        max-width: 1200px;
 
         
         section {
@@ -101,11 +102,13 @@
         }
 
         @media @phone500 {
-            display: flex;
+            .flex(column; space-between; center);
+            // display: flex;
             flex-wrap: nowrap;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;           
+            // flex-direction: column;
+            // align-items: center;
+            justify-content: space-between;   
+            width: 95%;        
                       
         }
 

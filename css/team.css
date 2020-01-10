@@ -173,14 +173,15 @@ table {
   border-spacing: 0;
 }
 .team-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
   background-image: url(../img/16x9-img21.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .team-header nav {
   display: flex;
@@ -254,16 +255,17 @@ table {
   flex-wrap: wrap;
   width: 80%;
   min-height: 100vh;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 .team-header .team-container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
   max-width: 350px;
   height: 550px;
   background-color: white;
   border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 20px 10px 0 10px;
   padding: 20px;
 }
@@ -318,15 +320,17 @@ table {
 @media (max-width: 500px) {
   .team-header .team-container section {
     margin: 10px 0px;
+    height: 450px;
   }
 }
 @media (max-width: 500px) {
   .team-header .team-container {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    width: 95%;
   }
 }
 .features-title {

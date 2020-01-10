@@ -264,12 +264,6 @@ table {
   overflow: auto;
   align-items: center;
 }
-@media (max-width: 500px) {
-  .contact-header .contact-container {
-    height: 95vh;
-    margin-top: 1vh;
-  }
-}
 .contact-header .contact-container button {
   min-width: 200px;
   max-width: 100%;
@@ -343,7 +337,7 @@ table {
   .contact-header .contact-container {
     margin: 0 2%;
     width: 95%;
-    height: 95vh;
+    height: 85vh;
   }
 }
 .contact-header .contact-container .or-login {
