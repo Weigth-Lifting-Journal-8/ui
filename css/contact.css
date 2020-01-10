@@ -223,9 +223,11 @@ table {
   }
 }
 .contact-header nav .nav-links {
-  width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
+  width: 50%;
 }
 .contact-header nav .nav-links a {
   text-decoration: none;
@@ -261,6 +263,12 @@ table {
   padding: 2%;
   overflow: auto;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .contact-header .contact-container {
+    height: 95vh;
+    margin-top: 1vh;
+  }
 }
 .contact-header .contact-container button {
   min-width: 200px;
@@ -328,13 +336,14 @@ table {
 @media (max-width: 768px) {
   .contact-header .contact-container {
     width: 70%;
+    height: 95vh;
   }
 }
 @media (max-width: 500px) {
   .contact-header .contact-container {
-    margin-top: 5vh;
     margin: 0 2%;
     width: 95%;
+    height: 95vh;
   }
 }
 .contact-header .contact-container .or-login {

@@ -234,9 +234,11 @@ table {
   }
 }
 .home-header nav .nav-links {
-  width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
+  width: 50%;
 }
 .home-header nav .nav-links a {
   text-decoration: none;
@@ -262,12 +264,12 @@ table {
   }
 }
 .home-header .title-content {
-  color: white;
-  height: 90vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  height: 90vh;
+  display: flex;
 }
 @media (max-width: 500px) {
   .home-header .title-content {
@@ -278,7 +280,7 @@ table {
   font-size: 4rem;
   font-family: 'Russo One', sans-serif;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .home-header .title-content h1 {
     font-size: 3.2rem;
   }
@@ -294,6 +296,10 @@ table {
     font-size: 2rem;
     text-align: center;
   }
+}
+.home-header .title-content p {
+  max-width: 600px;
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   .home-header .title-content p {

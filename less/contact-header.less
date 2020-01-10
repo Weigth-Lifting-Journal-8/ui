@@ -18,18 +18,20 @@
 
     //navbar inside of header styling 
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 7vh;
 
-        .nav-logo {
+        .flex(row; space-between; center);        
+        width: 100%;
+        height: 7vh;        
+
+
+        .nav-logo {   
+
+            
             top: 0;
             width: 2%;
             display: flex;
             align-items: flex-start;
+
 
             @media @desktop1600 {
                 width: 3%;
@@ -49,12 +51,13 @@
                 display: none;
                           
             }
+
         } //end of nav-logo
 
         .nav-links {
-            width: 50%;
-            display: flex;
-            justify-content: space-around;
+
+            .flex(row; space-around; none);
+            width: 50%;            
 
             a {
                 text-decoration: none;
@@ -63,7 +66,6 @@
 
                 &:hover {
                     color:@action-button;
-
                 } //end of :hover
 
                 @media @phone500 {
@@ -84,9 +86,9 @@
             }
             //end of nav-links media query
 
-        } //end of nav-links
+        } //end of nav-links 
 
-    } //end of nav
+     } //end of nav
 
 
 
@@ -102,6 +104,12 @@
         padding: 2%;
         overflow: auto;
         align-items: center;
+
+        @media @phone500 {
+            height: 95vh;
+            margin-top: 1vh;
+
+        }
 
         button {
             .general-button();
@@ -157,13 +165,16 @@
 
         @media @laptop768 {
             width: 70%;
+            height: 95vh;
                       
         }
 
         @media @phone500 {
-            margin-top: 5vh;
+            
             margin: 0 2%;
-            width:95%;           
+            width:95%; 
+            height: 95vh;
+                      
     
         }
 

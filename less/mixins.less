@@ -1,4 +1,13 @@
 
+//flex parametric mixin
+.flex(@direction; @justify; @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
 //call to action button
 .action-button() {
     min-width: 400px;
@@ -90,12 +99,20 @@
     p {
         margin: 10px;
         text-align: justify;
+
+        @media @phone500 {
+            text-align: left;
+        }
     }
 
     button {
         margin-top: 50px;
         .general-button();
-    }   
+    } 
+    
+    @media @phone500 {
+        margin: 10px 0px;
+    }
 
     
 } //end of bio card
