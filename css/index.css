@@ -305,7 +305,8 @@ table {
 }
 .home-header .title-content p {
   max-width: 600px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .home-header .title-content p {

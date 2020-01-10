@@ -293,6 +293,8 @@ table {
 .team-header .team-container section p {
   margin: 10px;
   text-align: justify;
+  margin-top: 40px;
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   .team-header .team-container section p {

@@ -301,6 +301,7 @@ table {
 .contact-header .contact-container form label {
   font-size: 1.8rem;
   padding-top: 2vh;
+  text-align: left;
   font-family: 'Russo One', sans-serif;
   color: #ff6a25;
 }

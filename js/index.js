@@ -11,6 +11,7 @@ let counter = 1;
 let size = carouselImage[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
 //Button Listener
 nextBtn.addEventListener('click', () => {
     if(counter > carouselImage.length - 1) return;
