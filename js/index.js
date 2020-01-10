@@ -13,18 +13,22 @@ let size = carouselImage[0].clientWidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //Button Listener
 nextBtn.addEventListener('click', () => {
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    if(counter > carouselImage.length - 1) return;
+    carouselSlide.style.transition = "transform 0.5s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     
 });
 
 prevBtn.addEventListener('click', () => {
-    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    if (counter <= 0) return;
+    carouselSlide.style.transition = 'transform 0.5s ease-in-out';
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     
 }); 
+
+//once end is reached simulate endless scroll
 
 carouselSlide.addEventListener('transitionend', () => {
     if (carouselImage[counter].id === 'last-clone') {
@@ -35,7 +39,7 @@ carouselSlide.addEventListener('transitionend', () => {
 
     if (carouselImage[counter].id === 'first-clone') {
         carouselSlide.style.transition = 'none';
-        counter = carouselImage.length -2;
+        counter = carouselImage.length - counter;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 

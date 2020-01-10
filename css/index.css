@@ -48,6 +48,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  text-align: center;
+}
 html,
 body,
 div,
@@ -263,6 +266,9 @@ table {
     width: 100%;
   }
 }
+.home-header nav .nav-links .active-nav {
+  color: gold;
+}
 .home-header .title-content {
   flex-direction: column;
   justify-content: center;
@@ -337,7 +343,7 @@ table {
   font-size: 2rem;
   font-family: 'Russo One', sans-serif;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .features-title {
     width: 100%;
     font-size: 1.6rem;
@@ -349,20 +355,21 @@ table {
   display: flex;
   justify-content: space-between;
   padding: 5vh 5% 0 5%;
+  background-color: white;
 }
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .features-container {
     max-width: 1000px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .features-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .features-container {
     display: flex;
     flex-direction: column;
@@ -378,7 +385,7 @@ table {
 .features-container section img {
   width: 50%;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .features-container section img {
     width: 40%;
   }
@@ -392,13 +399,13 @@ table {
   font-size: 1.4rem;
   text-align: justify;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .features-container section {
     width: 100%;
     padding: 2vh 10%;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .features-container section {
     width: 100%;
     padding: 2vh 5%;
@@ -410,6 +417,7 @@ table {
   align-items: center;
   padding: 5vh;
   font-size: 2rem;
+  background-color: white;
 }
 .features-button button {
   min-width: 400px;
@@ -433,15 +441,63 @@ table {
   }
 }
 .carousel-container {
-  width: 800px;
+  width: 400px;
   margin: auto;
-  border: 1px solid pink;
+  overflow: hidden;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .carousel-slide {
   display: flex;
-  width: 600px;
-  height: 500px;
-  border: 2px solid green;
+  width: 400px;
+  height: 400px;
+}
+#prevBtn {
+  min-width: 200px;
+  max-width: 100%;
+  width: 20%;
+  height: 5vh;
+  background-color: gold;
+  color: black;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2rem;
+}
+#prevBtn:hover {
+  background-color: #ffe766;
+}
+@media (max-width: 500px) {
+  #prevBtn {
+    margin-top: 2vh;
+    min-width: 100px;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+#nextBtn {
+  min-width: 200px;
+  max-width: 100%;
+  width: 20%;
+  height: 5vh;
+  background-color: gold;
+  color: black;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ff6a25;
+}
+#nextBtn:hover {
+  background-color: #ffe766;
+}
+@media (max-width: 500px) {
+  #nextBtn {
+    margin-top: 2vh;
+    min-width: 100px;
+    width: 100%;
+    font-size: 1.4rem;
+  }
 }
 footer {
   height: 10vh;
