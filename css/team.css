@@ -437,6 +437,16 @@ table {
     font-size: 1.4rem;
   }
 }
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  border: 1px solid pink;
+}
+.carousel-slider {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
 footer {
   height: 10vh;
   background-color: #e9e9e9;
